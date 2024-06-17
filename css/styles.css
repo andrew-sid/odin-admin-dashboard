@@ -49,14 +49,15 @@ ul {
 /* sidebar */
 
 .sidebar {
-  display: grid;
-  grid-template-rows: 60px 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   background-color: var(--main-clr);
   grid-area: sidebar;
   border: 1px solid yellow;
   gap: 50px;
-  padding-left: 20px;
   font-size: 1.2rem;
+  min-height: 100vh;
+  padding: 10px 10px 10px 20px;
 }
 
 .sidebar a img {
@@ -106,6 +107,7 @@ ul {
   padding: 30px;
   grid-area: header;
   border: 1px solid red;
+  height: 225px;
 }
 
 .header__top {
