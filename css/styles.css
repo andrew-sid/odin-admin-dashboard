@@ -206,10 +206,15 @@ ul {
 
 .header__buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 
 .header__buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--main-clr);
   border: none;
   border-radius: 20px;
