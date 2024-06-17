@@ -200,7 +200,7 @@ ul {
 }
 
 .user-info__user-name {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   grid-area: name;
 }
@@ -225,6 +225,7 @@ ul {
   font-size: 0.9rem;
   font-weight: 900;
   width: 100px;
+  cursor: pointer;
 }
 
 /*MAIN*/
@@ -349,7 +350,7 @@ ul {
 .item-traiding {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .item-traiding__avatar {
