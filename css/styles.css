@@ -1,12 +1,37 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --main-clr: #1992d4;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas:
     'sidebar header'
     'sidebar main';
@@ -17,12 +42,68 @@
   border: 1px solid red;
 }
 
-.sidebar {
-  grid-area: sidebar;
-  border: 1px solid yellow;
-}
-
 .main {
   grid-area: main;
   border: 1px solid blue;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+/* sidebar */
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr;
+  background-color: var(--main-clr);
+  grid-area: sidebar;
+  border: 1px solid yellow;
+  gap: 50px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+.sidebar a img {
+  width: 30px;
+}
+
+.sidebar a img {
+  width: 30px;
+}
+
+.sidebar__logo {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 60px 1fr;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  gap: 15px;
+}
+
+.sidebar__logo img {
+  width: 60px;
+}
+
+.sidebar__list {
+  display: grid;
+  gap: 15px;
+}
+
+.sidebar__item {
+  display: grid;
+  justify-content: start;
+}
+
+.sidebar__link {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  column-gap: 15px;
 }
