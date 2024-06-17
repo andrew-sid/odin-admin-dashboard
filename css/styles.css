@@ -230,11 +230,7 @@ ul {
 .main {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-    'projects announcements'
-    'projects announcements'
-    'projects trending'
-    'projects trending';
+  grid-template-rows: repeat(auto-fit, 1fr);
   grid-area: main;
   background-color: #e2e8f0;
   padding: 30px 40px;
@@ -242,7 +238,8 @@ ul {
 }
 
 .projects {
-  grid-area: projects;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
 }
 
 .projects__title {
@@ -264,7 +261,7 @@ ul {
   background-color: #fff;
   border-radius: 15px;
   border-left: 10px solid #f0b429;
-  height: 250px;
+  min-height: 250px;
 }
 
 .project-card__btns {
@@ -300,20 +297,22 @@ ul {
 }
 
 .announcements {
-  grid-area: announcements;
+  grid-column: 2 / 3;
+  grid-row: 1;
 }
 
 .announcements__title {
   margin-bottom: 30px;
 }
 
-.announcements__list {
+.announcements__list,
+.trending__list {
   display: flex;
   flex-direction: column;
   padding: 30px;
   background-color: #fff;
   border-radius: 15px;
-  gap: 15px;
+  gap: 13px;
 }
 
 .announcement {
@@ -337,20 +336,12 @@ ul {
 }
 
 .trending {
-  grid-area: trending;
+  grid-column: 2;
+  grid-row: 2 / 3;
 }
 
 .trending__title {
   margin-bottom: 30px;
-}
-
-.trending__list {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .item-traiding {
