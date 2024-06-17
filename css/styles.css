@@ -31,7 +31,7 @@ html {
 
 .wrapper {
   display: grid;
-  grid-template: 200px 1fr / 1fr 5fr;
+  grid-template: 185px 1fr / 1fr 5fr;
   grid-auto-rows: minmax(225px, 1fr);
   grid-template-areas:
     'sidebar header'
@@ -114,7 +114,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .header__search {
