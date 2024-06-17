@@ -216,13 +216,15 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: var(--main-clr);
   border: none;
   border-radius: 20px;
-  padding: 10px 25px;
+  padding: 12px 0px;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 900;
+  width: 100px;
 }
 
 /*MAIN*/
