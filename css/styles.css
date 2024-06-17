@@ -37,16 +37,6 @@ html {
     'sidebar main';
 }
 
-.header {
-  grid-area: header;
-  border: 1px solid red;
-}
-
-.main {
-  grid-area: main;
-  border: 1px solid blue;
-}
-
 a {
   text-decoration: none;
   color: #fff;
@@ -106,4 +96,132 @@ ul {
   grid-template-columns: 1fr 5fr;
   align-items: center;
   column-gap: 15px;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  grid-area: header;
+  border: 1px solid red;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.header__search {
+  display: flex;
+  gap: 15px;
+  flex: 2;
+}
+
+.header__search img {
+  width: 30px;
+}
+
+.header__input {
+  width: 100%;
+  border: none;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.header__input:focus {
+  outline: none;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 30px;
+}
+
+.header__notif {
+  width: 30px;
+  margin-left: auto;
+}
+
+.user-info__avatar {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.user-info__name {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas:
+    'avatar greeting'
+    'avatar name';
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile img {
+  width: 80px;
+  border-radius: 50%;
+  grid-area: avatar;
+}
+
+.user-info__greeting {
+  grid-area: greeting;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.user-info__user-name {
+  font-size: 1.2rem;
+  font-weight: 900;
+  grid-area: name;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.header__buttons button {
+  background-color: var(--main-clr);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+/*MAIN*/
+
+.main {
+  grid-area: main;
+  border: 1px solid blue;
 }

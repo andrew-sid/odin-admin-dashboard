@@ -8,7 +8,37 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">header</header>
+      <header class="header">
+        <div class="header__top">
+          <div class="header__search">
+            <img src="./img/magnify.svg" alt="Search" />
+            <input type="text" class="header__input" />
+          </div>
+          <div class="header__user-info user-info">
+            <a href="" class="header__notif">
+              <img src="./img/bell-outline.svg" alt="Notification" />
+            </a>
+            <img class="user-info__avatar" src="./img/avatar.jpg" width="100px" alt="UserAvatar" />
+            <span class="user-info__name">Morgan Oakley</span>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__profile profile">
+            <img src="./img/avatar.jpg" width="100px" alt="User Avatar" />
+            <div>
+              <span class="user-info__greeting">Hi there,</span>
+              <p class="user-info__user-name">
+                Morgan Oakley <span class="user-info__social">(@morgan)</span>
+              </p>
+            </div>
+          </div>
+          <div class="header__buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </header>
       <aside class="sidebar">
         <div class="sidebar__logo">
           <img src="./img/dashboard-icon.svg" alt="Dashboard" />
